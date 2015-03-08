@@ -1,30 +1,24 @@
+var feefoFeed = 'http://www.feefo.com/feefo/xmlfeed.jsp?logon=www.aaetravel.com/SG&json=true';
 Meteor.methods({
-	getWeather: function(){
-		//return Meteor.http.call('GET','http://api.openweathermap.org/data/2.5/weather?q=' + city);
-		return Meteor.http.call('GET','http://www.feefo.com/feefo/xmlfeed.jsp?logon=www.aaetravel.com/SG&json=true');
+	getFeefoFeed: function(){
+		return Meteor.http.call('GET',feefoFeed);
 	},
 	getReviews: function(){
-		//return Meteor.http.call('GET','http://api.openweathermap.org/data/2.5/weather?q=' + city);
-		return Meteor.http.call('GET','http://www.feefo.com/feefo/xmlfeed.jsp?logon=www.aaetravel.com/SG&json=true');
+		return Meteor.http.call('GET',feefoFeed);
 	},
 	getLatest5thReview: function(){
-		//return Meteor.http.call('GET','http://api.openweathermap.org/data/2.5/weather?q=' + city);
-		return Meteor.http.call('GET','http://www.feefo.com/feefo/xmlfeed.jsp?logon=www.aaetravel.com/SG&json=true');
+		return Meteor.http.call('GET',feefoFeed);
 	},
 	getLatest4thReview: function(){
-		//return Meteor.http.call('GET','http://api.openweathermap.org/data/2.5/weather?q=' + city);
-		return Meteor.http.call('GET','http://www.feefo.com/feefo/xmlfeed.jsp?logon=www.aaetravel.com/SG&json=true');
+		return Meteor.http.call('GET',feefoFeed);
 	},
 	getLatest3rdReview: function(){
-		//return Meteor.http.call('GET','http://api.openweathermap.org/data/2.5/weather?q=' + city);
-		return Meteor.http.call('GET','http://www.feefo.com/feefo/xmlfeed.jsp?logon=www.aaetravel.com/SG&json=true');
+		return Meteor.http.call('GET',feefoFeed);
 	},
 	getLatest2ndReview: function(){
-		//return Meteor.http.call('GET','http://api.openweathermap.org/data/2.5/weather?q=' + city);
-		return Meteor.http.call('GET','http://www.feefo.com/feefo/xmlfeed.jsp?logon=www.aaetravel.com/SG&json=true');
+		return Meteor.http.call('GET',feefoFeed);
 	},
 	getLatest1stReview: function(){
-		//return Meteor.http.call('GET','http://api.openweathermap.org/data/2.5/weather?q=' + city);
-		return Meteor.http.call('GET','http://www.feefo.com/feefo/xmlfeed.jsp?logon=www.aaetravel.com/SG&json=true');
+		return Meteor.http.call('GET',feefoFeed);
 	}
 });

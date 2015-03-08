@@ -1,5 +1,5 @@
 Template.layout.curweather = function(){
-	Meteor.call('getWeather', function(err, results){
+	Meteor.call('getFeefoFeed', function(err, results){
 		console.log(results.content);
 		Session.set('weather', JSON.parse(results.content).FEEDBACKLIST.SUMMARY.AVERAGE);
 	});
@@ -7,37 +7,37 @@ Template.layout.curweather = function(){
 	
 }
 Template.layout.numReviews = function (){
-	Meteor.call('getReviews', function(err, results){
+	Meteor.call('getFeefoFeed', function(err, results){
 		Session.set('reviewCount', JSON.parse(results.content).FEEDBACKLIST.SUMMARY.COUNT);
 	});
 	return Session.get('reviewCount');
 }
 Template.layout.latest5th = function (){
-	Meteor.call('getLatest5thReview', function(err, results){
+	Meteor.call('getFeefoFeed', function(err, results){
 		Session.set('latest5thReview', JSON.parse(results.content).FEEDBACKLIST.FEEDBACK[0].CUSTOMERCOMMENT);
 	});
 	return Session.get('latest5thReview');
 }
 Template.layout.latest4th = function (){
-	Meteor.call('getLatest4thReview', function(err, results){
+	Meteor.call('getFeefoFeed', function(err, results){
 		Session.set('latest4thReview', JSON.parse(results.content).FEEDBACKLIST.FEEDBACK[1].CUSTOMERCOMMENT);
 	});
 	return Session.get('latest4thReview');
 }
 Template.layout.latest3rd = function (){
-	Meteor.call('getLatest3rdReview', function(err, results){
+	Meteor.call('getFeefoFeed', function(err, results){
 		Session.set('latest3rdReview', JSON.parse(results.content).FEEDBACKLIST.FEEDBACK[2].CUSTOMERCOMMENT);
 	});
 	return Session.get('latest3rdReview');
 }
 Template.layout.latest2nd = function (){
-	Meteor.call('getLatest2ndReview', function(err, results){
+	Meteor.call('getFeefoFeed', function(err, results){
 		Session.set('latest2ndReview', JSON.parse(results.content).FEEDBACKLIST.FEEDBACK[3].CUSTOMERCOMMENT);
 	});
 	return Session.get('latest2ndReview');
 }
 Template.layout.latest1st = function (){
-	Meteor.call('getLatest1stReview', function(err, results){
+	Meteor.call('getFeefoFeed', function(err, results){
 		Session.set('latest1stReview', JSON.parse(results.content).FEEDBACKLIST.FEEDBACK[4].CUSTOMERCOMMENT);
 	});
 	return Session.get('latest1stReview');
