@@ -1,0 +1,24 @@
+<template name="layout">
+	<div class="page-header" style="padding-top: 20px;">
+		<div style="width: 200px; float: left;">
+		<h1 style="font-size: 9em;">
+			{{curweather}}
+		</h1>
+		<p style="margin-top: 40px;">Average rating from users out of {{numReviews}} reviews</p>
+		</div>
+		<div id="graph" style="float: right; width: 60%;">
+			{{> highchartsHelper chartId="test" chartWidth="100%" chartObject=topGenresChart}}
+		</div>
+		<br style="clear: both;">
+		<div class="comments">
+			<h2>last 5 latest comments from our users</h2>
+			<ul>
+				<li>{{latest5th}}</li>
+				<li>{{latest4th}}</li>
+				<li>{{latest3rd}}</li>
+				<li>{{latest2nd}}</li>
+				<li>{{latest1st}}</li>
+			</ul>
+		</div>
+	</div>
+</template>
