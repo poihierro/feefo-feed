@@ -1,2 +1,51 @@
+<<<<<<< HEAD
 *DS_STORE
 history.yml
+=======
+# --------------------
+# OSX Files
+# --------------------
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.Spotlight-V100
+.Trashes
+
+# --------------------
+# IntelliJ Files
+# --------------------
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# --------------------
+# Node Files
+# --------------------
+.nodemonignore
+npm-debug.log
+#node_modules/
+
+# --------------------
+# SASS Files
+# --------------------
+.sass-cache/
+
+# --------------------
+# Bower Files
+# --------------------
+.bower-*/
+#bower_components
+
+# --------------------
+# App Files
+# --------------------
+#test/coverage/
+#modules/public/
+#modules/views/
+#/public/build/
+#/packages/custom/
+#/packages/contrib/
+>>>>>>> eb733aa9f12bc1782185c302d3da143245b9758e
