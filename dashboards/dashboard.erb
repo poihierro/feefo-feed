@@ -1,0 +1,42 @@
+<% content_for :title do %>Expedia.com.sg Feefo Dashboard<% end %>
+<div class="gridster">
+  <ul>
+    <!-- <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="welcome" data-view="Text" data-title="Hello" data-text="This is your shiny new dashboard." data-moreinfo="Protip: You can drag the widgets around!"></div>
+    </li> -->
+    <li data-row="1" data-col="1" data-sizex="3" data-sizey="1">
+      <div data-id="comments" data-view="Comments" data-title="Latest Feefo Comment" ></div>
+    </li>
+    <!-- <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="feefo" data-view="Feefo" data-title="Feefo Rating" ></div>
+    </li> -->
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="convergence" data-view="Graph" data-title="Feefo Rating" ></div>
+    </li>
+    <!-- <li data-row="1" data-col="1" data-sizex="1" data-sizey="2">
+      <div data-id="buzzwords" data-view="List" data-unordered="true" data-title="Previous Feedback" data-moreinfo=""></div>
+    </li> -->
+
+    <!-- <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="buzzwords" data-view="List" data-unordered="true" data-title="Previous Feedback" data-moreinfo=""></div>
+    </li> -->
+
+    <!-- <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="valuation" data-view="Number" data-title="Current Valuation" data-moreinfo="In billions" data-prefix="$"></div>
+    </li> -->
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="valuation" data-view="Number" data-title="Hotels Booking Today YOY" style="background-color:lightblue"></div>
+    </li>
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="valuation" data-view="Number" data-title="Flights Booking Today" style="background-color:lightgreen"></div>
+    </li>
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="valuation" data-view="Number" data-title="Packages Booking Today" style="background-color:lightbrown"></div>
+    </li>
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="valuation" data-view="Number" data-title="Activities Booking Today" style="background-color:orange"></div>
+    </li>
+  </ul>
+
+  <!-- <center><div style="font-size: 12px">Try this: curl -d '{ "auth_token": "YOUR_AUTH_TOKEN", "text": "Hey, Look what I can do!" }' \http://<%=request.host%>:<%=request.port%>/widgets/welcome</div></center> -->
+</div>
